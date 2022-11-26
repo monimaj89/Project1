@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Spectral:ital@1&display=swap');
+
+.heading h1 {
+    font-family: "Great Vibes", sans-serif;
+    text-align: center;
+    border: 1px solid;
+    margin: 20px 0 0;
+    padding: 20px;
+    font-size: 50px;
+    background-color: #fff;
+    color: #2d3436;
+}
+
+.navbar-bg {
+    font-family: "lato", sans-serif;
+    border: 1px groove;
+    background-color: #d3d3d3;
+    text-transform: uppercase;
+    color: #2d3436;
+}
