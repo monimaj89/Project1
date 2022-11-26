@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Spectral:ital@1&display=swap');
 
-.heading h1 {
+/* -----------------------------------------------------------Header */
+.heading {
     font-family: "Great Vibes", sans-serif;
     text-align: center;
     border: 1px solid;
@@ -9,7 +10,14 @@
     font-size: 50px;
     background-color: #fff;
     color: #2d3436;
+    letter-spacing: 5px;
 }
+
+a:hover {
+    text-decoration: none !important;
+}
+
+/* -----------------------------------------------------------Navbar */
 
 .navbar-bg {
     font-family: "lato", sans-serif;
@@ -17,4 +25,31 @@
     background-color: #d3d3d3;
     text-transform: uppercase;
     color: #2d3436;
+}
+
+
+
+/* -----------------------------------------------------------Image */
+
+.img-container {
+    background: url("../images/paint.jpg") no-repeat bottom left fixed;
+    height: 50vh;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* callout-container parent of the child -opaque-overlay, parent musi byc relative a child absolute  */
+    position: relative
+}
+
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
 }
