@@ -80,7 +80,7 @@ a:hover {
 
 
 .btn-bg-color:hover {
-    background-color: red
+    background-color: #2d3436;
 }
 
 /* -----------------------------------------------------------Footer */
@@ -113,3 +113,15 @@ footer {
 }
 
 
+/* -----------------------------------------Slideshow */
+
+.slide-mg {
+    margin: 10px;
+    justify-content: center;
+}
+
+
+@media (min-width: 280px) and (max-width: 367px) {
+    .ft-fold {font-size: 30px;}
+    .img-head-fold {font-size: 50px;}
+}
