@@ -1,12 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Spectral:ital@1&display=swap');
 
+
+.container-fluid {
+    margin: 0;
+    padding: 0;
+}
+
+
 /* -----------------------------------------------------------Header */
+
 .heading {
     font-family: "Great Vibes", sans-serif;
     text-align: center;
     border: 1px solid;
-    margin: 20px 0 0;
     padding: 20px;
+    margin: 0;
     font-size: 50px;
     background-color: #fff;
     color: #2d3436;
@@ -15,6 +23,20 @@
 
 a:hover {
     text-decoration: none !important;
+}
+
+.img-head {
+    color: #fff;
+    font-family: "Spectral",sans-serif;
+    font-size: 60px;
+    padding: 20px;
+}
+
+.btn-img {
+    padding: 20px;
+    margin-top: 90px;
+    text-align: center;
+   
 }
 
 /* -----------------------------------------------------------Navbar */
@@ -29,10 +51,12 @@ a:hover {
 
 
 
+
+
 /* -----------------------------------------------------------Image */
 
 .img-container {
-    background: url("../images/paint.jpg") no-repeat bottom left fixed;
+    background: url("../images/paint.jpg") no-repeat center center;
     height: 50vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -45,7 +69,7 @@ a:hover {
     position: relative
 }
 
-.opaque-overlay {
+.img-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -53,3 +77,39 @@ a:hover {
     width: 100%;
     background-color: rgba(0,0,0,0.5);
 }
+
+
+.btn-bg-color:hover {
+    background-color: red
+}
+
+/* -----------------------------------------------------------Footer */
+
+
+
+footer {
+    background-color: #d3d3d3;
+    color: #2d3436;
+    border: 1px groove; 
+}
+
+
+.social-links {
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.social-links li a i {
+    color: #2d3436;
+    width: 35px;
+    height: 35px;
+    font-size: 25px;
+    border-radius: 50%;
+}
+
+.social-links li a i:hover {
+    color: #aaa;
+}
+
+
