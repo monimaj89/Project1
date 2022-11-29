@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato&family=Spectral:ital@1&display=swap');
 
 
+body {
+    font-family: "Lato", sans-serif;
+}
+
 .container-fluid {
     margin: 0;
     padding: 0;
@@ -10,6 +14,7 @@
 /* -----------------------------------------------------------Header */
 
 .heading {
+    background-image: linear-gradient(#ffff, #d3d3d3);
     font-family: "Great Vibes", sans-serif;
     text-align: center;
     border: 1px solid;
@@ -50,9 +55,6 @@ a:hover {
 }
 
 
-
-
-
 /* -----------------------------------------------------------Image */
 
 .img-container {
@@ -65,7 +67,6 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* callout-container parent of the child -opaque-overlay, parent musi byc relative a child absolute  */
     position: relative
 }
 
@@ -82,6 +83,57 @@ a:hover {
 .btn-bg-color:hover {
     background-color: #2d3436;
 }
+
+/* -----------------------------------------Slideshow */
+
+.slide-mg {
+    margin: 10px 0;
+    justify-content: center;
+}
+
+
+@media (min-width: 280px) and (max-width: 367px) {
+    .ft-fold {font-size: 30px;}
+    .img-head-fold {font-size: 50px;}
+}
+
+
+/* ----------------------------------------- Quote */
+
+.header-art {
+    font-family: "Spectral", sans-serif;
+    padding: 10px 10px 0;
+    color: #2d3436;
+}
+
+p {
+    padding: 10px;
+}
+
+
+.about-quote {
+    background-color: #d3d3d3;
+   
+}
+
+
+.quote-bg {
+    background: url('../images/quote.png') center;
+    background-size: cover;
+    background-color: rgba(0,0,0,0.5)
+}
+
+.quote{
+    padding: 70px;
+    text-align: center;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    color: #2d3436;
+    font-size: 35px;
+}
+
 
 /* -----------------------------------------------------------Footer */
 
@@ -113,15 +165,5 @@ footer {
 }
 
 
-/* -----------------------------------------Slideshow */
-
-.slide-mg {
-    margin: 10px;
-    justify-content: center;
-}
 
 
-@media (min-width: 280px) and (max-width: 367px) {
-    .ft-fold {font-size: 30px;}
-    .img-head-fold {font-size: 50px;}
-}
