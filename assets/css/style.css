@@ -3,11 +3,7 @@
 
 body {
     font-family: "Lato", sans-serif;
-    background-image: url("assets/images/body-bg.png") no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;;
+    background-color: #d8e3e9;
  
     
 }
@@ -21,7 +17,7 @@ body {
 /* -----------------------------------------------------------Header */
 
 .heading {
-    background-image: linear-gradient(#ffff, #d3d3d3);
+    background-image: linear-gradient(#ffff, #a5d4de);
     font-family: "Great Vibes", sans-serif;
     text-align: center;
     border: 1px solid;
@@ -37,27 +33,22 @@ a:hover {
 }
 
 .img-head {
-    color: #fff;
+    color: #d8e3e9;
     font-family: "Spectral",sans-serif;
     font-size: 60px;
     padding: 20px;
 }
 
-.btn-img {
-    padding: 20px;
-    margin-top: 90px;
-    text-align: center;
-   
-}
+
 
 /* -----------------------------------------------------------Navbar */
 
 .navbar-bg {
     font-family: "lato", sans-serif;
     border: 1px groove;
-    background-color: #d3d3d3;
+    background-color: #a5d4de;
     text-transform: uppercase;
-    color: #2d3436;
+    color: #425c81;
 }
 
 
@@ -87,7 +78,20 @@ a:hover {
 
 
 .btn-bg-color:hover {
-    background-color: #2d3436;
+    background-color: #a5d4de;
+    color: #2d3436;
+}
+
+.btn-img {
+    padding: 20px;
+    margin-top: 90px;
+    text-align: center;  
+}
+
+.mybtn{
+    color: #d8e3e9;
+    background-color: #425c81;
+    border-color: #425c81;
 }
 
 /* -----------------------------------------Slideshow */
@@ -95,7 +99,13 @@ a:hover {
 .slide-mg {
     margin: 10px 0;
     justify-content: center;
+  
 }
+
+.slide-mg img {
+    border: 20px solid #425c81;
+}
+
 
 
 /* ----------------------------------------- Quote */
@@ -113,7 +123,7 @@ p {
 
 
 .about-quote {
-    background-color: #d3d3d3;  
+    background-color: #a5d4de;  
 }
 
 
@@ -142,8 +152,7 @@ p {
 
 
 footer {
-    background-image: linear-gradient(#d3d3d3, #ffff);
-    color: #2d3436;
+    background-image: linear-gradient(#a5d4de, #ffff);
     border: 1px groove; 
 }
 
@@ -155,7 +164,7 @@ footer {
 }
 
 .social-links li a i {
-    color: #2d3436;
+    color: #425c81;
     width: 35px;
     height: 35px;
     font-size: 25px;
@@ -163,7 +172,7 @@ footer {
 }
 
 .social-links li a i:hover {
-    color: #aaa;
+    color: #a5d4de;
 }
 
 
@@ -179,7 +188,7 @@ footer {
 .pic img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 2px 2px 4px #2d3436;
+    box-shadow: 3px 4px 4px #425c81;
     padding: 0;
   }
 
@@ -202,7 +211,7 @@ footer {
     .pic img {
         width: 100%;
         border-radius: 20px;
-        box-shadow: 2px 2px 4px #2d3436;
+        box-shadow: 3px 4px 4px #425c81;
         }
     .pic {
         margin: 0;
