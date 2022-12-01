@@ -3,7 +3,13 @@
 
 body {
     font-family: "Lato", sans-serif;
-   
+    background-image: url("assets/images/body-bg.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;;
+ 
+    
 }
 
 .container-fluid {
@@ -163,16 +169,27 @@ footer {
 
 /* -----------------------------------------------------------Gallery */
 
+
+
+
 .pic {
-    margin: 5px 7px;
-    padding: 5px 7px;
+    margin: 5px 5px;
 }
 
 .pic img {
     width: 100%;
     border-radius: 20px;
     box-shadow: 2px 2px 4px #2d3436;
-}
+    padding: 0;
+  }
+
+.padlef {
+    padding: 5px;
+} 
+
+
+
+  /* ------------------------------------------------------------ Media query */
 
 
 @media (min-width: 280px) and (max-width: 367px) {
@@ -186,10 +203,9 @@ footer {
         width: 100%;
         border-radius: 20px;
         box-shadow: 2px 2px 4px #2d3436;
-        margin-bottom: 15px;}
+        }
     .pic {
         margin: 0;
-        padding-bottom: 0;
     }
 
 }
