@@ -35,7 +35,7 @@ a:hover {
 .img-head {
     color: #d8e3e9;
     font-family: "Spectral",sans-serif;
-    font-size: 60px;
+    font-size: 50px;
     padding: 20px;
 }
 
@@ -96,16 +96,24 @@ a:hover {
 
 /* -----------------------------------------Slideshow */
 
-.slide-mg {
-    margin: 10px 0;
+/* .carousel {
+    display: flex;
     justify-content: center;
+} */
+
+.carousel-item{
+    height: 50vh;
+    background-color: #425c81;
   
+} 
+.carousel-item img{
+    height: 50vh;
+
 }
 
-.slide-mg img {
-    border: 20px solid #425c81;
+#slide {
+    padding: 0; 
 }
-
 
 
 /* ----------------------------------------- Quote */
@@ -115,6 +123,7 @@ a:hover {
     padding: 10px 10px 0;
     color: #2d3436;
 }
+
 
 p {
     padding: 10px;
@@ -128,15 +137,14 @@ p {
 
 
 .quote-bg {
-   
     background: url('../images/quote.png') center;
     background-size: cover;
-    
+    height: 50vh;  
 }
 
 
 .quote {
-    padding: 40px;
+    padding: 40px 0;
     text-align: center;
     color: #2d3436;
     font-size: 35px;  
@@ -146,9 +154,34 @@ p {
     text-align: center;
 }
 
+/* -----------------------------------------Sec Quote */
+
+.secquote-bg {
+    background: url('../images/quote1.jpg') center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.secquote p {
+    font-size: 50px;
+    text-align: center;
+    color: #fff;
+    padding: 35px;
+}
+
+.color {
+    color: #78e08f;
+}
+ 
+.color2 {
+    color: #38ada9;
+}
+
+.color3 {
+    color: #079992;
+}
 
 /* -----------------------------------------------------------Footer */
-
 
 
 footer {
@@ -180,7 +213,6 @@ footer {
 
 
 
-
 .pic {
     margin: 5px 5px;
 }
@@ -197,24 +229,17 @@ footer {
 } 
 
 
+  /* ----------------------------------------------------Media query */
 
-  /* ------------------------------------------------------------ Media query */
-
-
-@media (min-width: 280px) and (max-width: 367px) {
+/*  size of header on samsung fold */
+@media (min-width: 280px) and (max-width: 365px) {
     .ft-fold {font-size: 30px;}
     .img-head-fold {font-size: 50px;}
+    .quote {font-size: 25px;}
+} 
 
-}
-
-@media (max-width: 767px) {
-    .pic img {
-        width: 100%;
-        border-radius: 20px;
-        box-shadow: 3px 4px 4px #425c81;
-        }
-    .pic {
-        margin: 0;
-    }
-
+@media only screen and (min-width: 768px) {
+    /* .ft-fold {font-size: 50px;} */
+    .img-head-fold {font-size: 60px;}
+    .secquote p {font-size: 80px;}
 }
