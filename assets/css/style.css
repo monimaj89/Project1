@@ -23,7 +23,7 @@ body {
     border: 1px solid;
     padding: 20px;
     margin: 0;
-    font-size: 50px;
+    font-size: 3.1rem;
     color: #2d3436;
     letter-spacing: 5px;
 }
@@ -32,12 +32,7 @@ a:hover {
     text-decoration: none !important;
 }
 
-.img-head {
-    color: #d8e3e9;
-    font-family: "Spectral",sans-serif;
-    font-size: 50px;
-    padding: 20px;
-}
+
 
 
 
@@ -76,6 +71,13 @@ a:hover {
     background-color: rgba(0,0,0,0.5);
 }
 
+.img-head {
+    color: #d8e3e9;
+    font-family: "Spectral",sans-serif;
+    font-size: 4rem;
+    padding: 2rem;
+    text-align: center;
+}
 
 .btn-bg-color:hover {
     background-color: #a5d4de;
@@ -83,8 +85,7 @@ a:hover {
 }
 
 .btn-img {
-    padding: 20px;
-    margin-top: 90px;
+    padding: 2rem;
     text-align: center;  
 }
 
@@ -96,24 +97,12 @@ a:hover {
 
 /* -----------------------------------------Slideshow */
 
-/* .carousel {
-    display: flex;
-    justify-content: center;
-} */
 
-.carousel-item{
-    height: 50vh;
-    background-color: #425c81;
-  
-} 
-.carousel-item img{
-    height: 50vh;
-
-}
 
 #slide {
-    padding: 0; 
+    background-color: #425c81;
 }
+
 
 
 /* ----------------------------------------- Quote */
@@ -124,10 +113,14 @@ a:hover {
     color: #2d3436;
 }
 
+.about-bg {
+    height: 50vh;
+}
 
-p {
-    padding: 10px;
+
+.about-bg p {
     text-align: justify;
+    letter-spacing: 1px;
 }
 
 
@@ -140,14 +133,16 @@ p {
     background: url('../images/quote.png') center;
     background-size: cover;
     height: 50vh;  
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
 }
 
 
 .quote {
-    padding: 40px 0;
-    text-align: center;
     color: #2d3436;
-    font-size: 35px;  
+    font-size: 2.2rem;  
 }
 
 .quote p {
@@ -160,13 +155,16 @@ p {
     background: url('../images/quote1.jpg') center;
     background-size: cover;
     height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .secquote p {
-    font-size: 50px;
-    text-align: center;
+    font-size: 3.2rem;
     color: #fff;
-    padding: 35px;
+    
 }
 
 .color {
@@ -174,7 +172,7 @@ p {
 }
  
 .color2 {
-    color: #38ada9;
+    color: #2cfff8;
 }
 
 .color3 {
@@ -212,7 +210,6 @@ footer {
 /* -----------------------------------------------------------Gallery */
 
 
-
 .pic {
     margin: 5px 5px;
 }
@@ -231,15 +228,16 @@ footer {
 
   /* ----------------------------------------------------Media query */
 
-/*  size of header on samsung fold */
-@media (min-width: 280px) and (max-width: 365px) {
-    .ft-fold {font-size: 30px;}
-    .img-head-fold {font-size: 50px;}
-    .quote {font-size: 25px;}
-} 
 
-@media only screen and (min-width: 768px) {
-    /* .ft-fold {font-size: 50px;} */
-    .img-head-fold {font-size: 60px;}
-    .secquote p {font-size: 80px;}
+@media(min-width: 450px) and (max-width: 1392px) {
+    .carousel-item img {object-fit: contain; height: 50vh;}}
+
+@media(min-width: 1393px) {
+    .carousel-item img {object-fit: contain; height: 50vh;}
+    .secquote p {margin-left: auto; margin-right: auto; width: 50%; font-size: 4.5rem;;}
+    .about-bg p {text-align: justify; font-size: 1.5rem; padding: 1rem;}
 }
+
+
+@media(max-width: 367px) { }
+
