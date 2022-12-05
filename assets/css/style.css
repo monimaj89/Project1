@@ -13,6 +13,10 @@ body {
     padding: 0;
 }
 
+.uppercase {
+    text-transform: uppercase;
+}
+
 
 /* -----------------------------------------------------------Header */
 
@@ -30,10 +34,8 @@ body {
 
 a:hover {
     text-decoration: none !important;
+    
 }
-
-
-
 
 
 /* -----------------------------------------------------------Navbar */
@@ -42,7 +44,6 @@ a:hover {
     font-family: "lato", sans-serif;
     border: 1px groove;
     background-color: #a5d4de;
-    text-transform: uppercase;
     color: #425c81;
 }
 
@@ -79,10 +80,6 @@ a:hover {
     text-align: center;
 }
 
-.btn-bg-color:hover {
-    background-color: #a5d4de;
-    color: #2d3436;
-}
 
 .btn-img {
     padding: 2rem;
@@ -94,6 +91,19 @@ a:hover {
     background-color: #425c81;
     border-color: #425c81;
 }
+
+.mybtn:hover {
+    background-color: #a5d4de;
+    color: #2d3436;
+    border: 1px solid;
+}
+
+.mybtn a {
+    color: #d8e3e9;
+}
+
+
+
 
 /* -----------------------------------------Slideshow */
 
@@ -223,8 +233,26 @@ footer {
 
 .padlef {
     padding: 5px;
-} 
+}
 
+
+ /* ---------------------------------------------------- Contact*/
+
+.center-form {
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 70%;
+}
+
+.contact-heading {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    
+}
+
+button[type="submit"] {
+    margin-top: 15px;
+    margin-bottom: 20px;}
 
   /* ----------------------------------------------------Media query */
 
@@ -236,6 +264,7 @@ footer {
     .carousel-item img {object-fit: contain; height: 50vh;}
     .secquote p {margin-left: auto; margin-right: auto; width: 50%; font-size: 4.5rem;;}
     .about-bg p {text-align: justify; font-size: 1.5rem; padding: 1rem;}
+    .center-form {padding-top: 30px; min-height: 240px; margin: 0 auto; max-width: 50%;}
 }
 
 
