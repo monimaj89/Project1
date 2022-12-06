@@ -82,14 +82,15 @@ a:hover {
 
 
 .btn-img {
-    padding: 2rem;
-    text-align: center;  
+     text-align: center;  
+     padding: 2rem;
 }
 
 .mybtn{
     color: #d8e3e9;
     background-color: #425c81;
-    border-color: #425c81;
+    border: 1px solid;
+    padding: 10px;
 }
 
 .mybtn:hover {
@@ -97,11 +98,6 @@ a:hover {
     color: #2d3436;
     border: 1px solid;
 }
-
-.mybtn a {
-    color: #d8e3e9;
-}
-
 
 
 
