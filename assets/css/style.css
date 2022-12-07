@@ -273,6 +273,7 @@ button[type="submit"] {
     #slide {border-radius: 50px; margin: 10px 0;}
     .about-bg {border-radius: 50px; margin: 10px 0;}
     .secquote-bg {border-radius: 50px; margin: 10px 0;}
+    .secquote p {display: table-caption; font-size: 3.5rem;}
     .quote-bg {border-radius: 50px; margin: 10px 0;}
     .carousel-item img {object-fit: contain; height: 50vh; border-radius: 50px;}
     .row-main {display: flex; justify-content: space-evenly;}
