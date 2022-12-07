@@ -3,8 +3,9 @@
 
 body {
     font-family: "Lato", sans-serif;
-    background-color: #d8e3e9;
- 
+    background-color: #a5d4de;
+    height: 100%;
+    margin: 0;
     
 }
 
@@ -51,7 +52,7 @@ a:hover {
 /* -----------------------------------------------------------Image */
 
 .img-container {
-    background: url("../images/paint.jpg") no-repeat center center;
+    background: url("../images/paint.webp") no-repeat center center;
     height: 50vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -61,6 +62,7 @@ a:hover {
     align-items: center;
     justify-content: center;
     position: relative;
+    background-color: #425c81;
 }
 
 .img-overlay {
@@ -107,6 +109,7 @@ a:hover {
 
 #slide {
     background-color: #425c81;
+    border: 1px solid;
 }
 
 
@@ -116,35 +119,39 @@ a:hover {
 .header-art {
     font-family: "Spectral", sans-serif;
     padding: 10px 10px 0;
-    color: #2d3436;
+    color: #fff;
 }
 
 .about-bg {
     height: 50vh;
+    background-color: #425c81;
+    border: 1px solid;
 }
 
 
 .about-bg p {
     text-align: justify;
     letter-spacing: 1px;
+    color: #fff;
 }
 
-
-.about-quote {
-    background-color: #a5d4de;  
-}
 
 
 .quote-bg {
-    background: url('../images/quote.png') center;
+    background: url('../images/quote.webp') center;
     background-size: cover;
     height: 50vh;  
     display: flex;
 	justify-content: center;
 	align-items: center;
     text-align: center;
+    border: 1px solid;
+    
 }
 
+.bg-color {
+    background-color: #425c81;
+}
 
 .quote {
     color: #2d3436;
@@ -158,13 +165,14 @@ a:hover {
 /* -----------------------------------------Sec Quote */
 
 .secquote-bg {
-    background: url('../images/quote1.jpg') center;
+    background: url('../images/quote1.webp') center;
     background-size: cover;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    border: 1px solid;
 }
 
 .secquote p {
@@ -182,7 +190,7 @@ a:hover {
 }
 
 .color3 {
-    color: #079992;
+    color: #18dfff;
 }
 
 /* -----------------------------------------------------------Footer */
@@ -213,8 +221,12 @@ footer {
 }
 
 
+
 /* -----------------------------------------------------------Gallery */
 
+.gall-bg {
+    background-color: #a5d4de;
+}
 
 .pic {
     margin: 5px 5px;
@@ -224,7 +236,6 @@ footer {
     width: 100%;
     border-radius: 20px;
     box-shadow: 3px 4px 4px #425c81;
-    padding: 0;
   }
 
 .padlef {
@@ -253,16 +264,22 @@ button[type="submit"] {
   /* ----------------------------------------------------Media query */
 
 
-@media(min-width: 450px) and (max-width: 1392px) {
-    .carousel-item img {object-fit: contain; height: 50vh;}}
+  @media(min-width: 280px) and (max-width: 374px) {
+    .heading {font-size: 2.5rem;}
+    .img-head {font-size: 3.5rem;}
+  }
 
-@media(min-width: 1393px) {
-    .carousel-item img {object-fit: contain; height: 50vh;}
-    .secquote p {margin-left: auto; margin-right: auto; width: 50%; font-size: 4.5rem;;}
-    .about-bg p {text-align: justify; font-size: 1.5rem; padding: 1rem;}
-    .center-form {padding-top: 30px; min-height: 240px; margin: 0 auto; max-width: 50%;}
+@media(min-width: 768px) {
+    #slide {border-radius: 50px; margin: 10px 0;}
+    .about-bg {border-radius: 50px; margin: 10px 0;}
+    .secquote-bg {border-radius: 50px; margin: 10px 0;}
+    .quote-bg {border-radius: 50px; margin: 10px 0;}
+    .carousel-item img {object-fit: contain; height: 50vh; border-radius: 50px;}
+    .row-main {display: flex; justify-content: space-evenly;}
 }
 
 
-@media(max-width: 367px) { }
+
+
+
 
