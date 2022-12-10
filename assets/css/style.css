@@ -3,10 +3,13 @@
 
 body {
     font-family: "Lato", sans-serif;
-    background-color: #a5d4de;
+    background-color: #a5d4de; 
+    display: flex;
+    flex-direction: column;   
+}
+
+html, body {
     height: 100%;
-    margin: 0;
-    
 }
 
 .container-fluid {
@@ -19,7 +22,7 @@ body {
 }
 
 
-/* -----------------------------------------------------------Header */
+/* ----------------------------------------------------------- Header */
 
 .heading {
     background-image: linear-gradient(#ffff, #a5d4de);
@@ -39,7 +42,7 @@ a:hover {
 }
 
 
-/* -----------------------------------------------------------Navbar */
+/* ----------------------------------------------------------- Navbar */
 
 .navbar-bg {
     font-family: "lato", sans-serif;
@@ -49,7 +52,7 @@ a:hover {
 }
 
 
-/* -----------------------------------------------------------Image */
+/* ------------------------------------------------------------ Image */
 
 .img-container {
     background: url("../images/paint.webp") no-repeat center center;
@@ -103,18 +106,7 @@ a:hover {
 
 
 
-/* -----------------------------------------Slideshow */
-
-
-
-#slide {
-    background-color: #425c81;
-    border: 1px solid;
-}
-
-
-
-/* ----------------------------------------- Quote */
+/* -------------------------------------------------------- About me */
 
 .header-art {
     font-family: "Spectral", sans-serif;
@@ -126,6 +118,7 @@ a:hover {
     height: 50vh;
     background-color: #425c81;
     border: 1px solid;
+    overflow: auto;
 }
 
 
@@ -133,36 +126,11 @@ a:hover {
     text-align: justify;
     letter-spacing: 1px;
     color: #fff;
+    margin-bottom: 0;
 }
 
 
-
-.quote-bg {
-    background: url('../images/quote.webp') center;
-    background-size: cover;
-    height: 50vh;  
-    display: flex;
-	justify-content: center;
-	align-items: center;
-    text-align: center;
-    border: 1px solid;
-    
-}
-
-.bg-color {
-    background-color: #425c81;
-}
-
-.quote {
-    color: #2d3436;
-    font-size: 2.2rem;  
-}
-
-.quote p {
-    text-align: center;
-}
-
-/* -----------------------------------------Sec Quote */
+/* -------------------------------------------------------- Earth Quote */
 
 .secquote-bg {
     background: url('../images/quote1.webp') center;
@@ -173,12 +141,13 @@ a:hover {
     align-items: center;
     text-align: center;
     border: 1px solid;
+    background-color: #425c81;
 }
 
 .secquote p {
     font-size: 3.2rem;
     color: #fff;
-    
+    margin: 0;
 }
 
 .color {
@@ -193,12 +162,53 @@ a:hover {
     color: #18dfff;
 }
 
-/* -----------------------------------------------------------Footer */
+/* -------------------------------------------------------- Art Quote */
+
+.quote-bg {
+    background: url('../images/quote.webp') center;
+    background-size: cover;
+    height: 50vh;  
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    text-align: center;
+    border: 1px solid;
+    
+}
+/* 
+.bg-color {
+    background-color: #425c81;
+} */
+
+.quote {
+    color: #2d3436;
+    font-size: 2.2rem;  
+}
+
+.quote p {
+    text-align: center;
+}
 
 
-footer {
+
+/* ------------------------------------------------------- Slideshow */
+
+
+.slide {
+    background-color: #425c81;
+    border: 1px solid;
+}
+
+
+/* --------------------------------------------------------- Footer */
+
+.content {
+    flex: 1 0 auto;
+}
+.footer {
     background-image: linear-gradient(#a5d4de, #ffff);
     border: 1px groove; 
+    flex-shrink: 0;
 }
 
 
@@ -222,7 +232,7 @@ footer {
 
 
 
-/* -----------------------------------------------------------Gallery */
+/* -------------------------------------------------------- Gallery */
 
 .gall-bg {
     background-color: #a5d4de;
@@ -243,7 +253,7 @@ footer {
 }
 
 
- /* ---------------------------------------------------- Contact*/
+ /* ------------------------------------------------------ Contact*/
 
 .center-form {
     padding-top: 10px;
@@ -261,24 +271,43 @@ button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;}
 
-  /* ----------------------------------------------------Media query */
+
+  /* -------------------------------------------------- Thank you page */
+
+  .thankyou {
+    border: 1px solid #425c81;
+    color: #2d3436;
+    border-radius: 1rem;
+    padding: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) }
 
 
-  @media(min-width: 280px) and (max-width: 374px) {
+
+/* ---------------------------------------------------- Media query */
+
+
+@media(min-width: 280px) and (max-width: 374px) {
     .heading {font-size: 2.5rem;}
     .img-head {font-size: 3.5rem;}
+    
+
   }
 
 @media(min-width: 768px) {
-    #slide {border-radius: 50px; margin: 10px 0;}
-    .about-bg {border-radius: 50px; margin: 10px 0;}
-    .secquote-bg {border-radius: 50px; margin: 10px 0;}
     .secquote p {display: table-caption; font-size: 3.5rem;}
-    .quote-bg {border-radius: 50px; margin: 10px 0;}
     .carousel-item img {object-fit: contain; height: 50vh; border-radius: 50px;}
     .row-main {display: flex; justify-content: space-evenly;}
+    .border-lg {border-radius: 50px; margin: 10px 0;}
+    .center-form {max-width: 50%;}
 }
 
+/* @media(min-width: 1440px) {
+    .about-bg p {font-size: 1rem;}
+} */
 
 
 
