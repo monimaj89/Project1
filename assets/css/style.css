@@ -95,7 +95,9 @@ a:hover {
     color: #d8e3e9;
     background-color: #425c81;
     border: 1px solid;
+    border-radius: 0.25rem;
     padding: 10px;
+
 }
 
 .mybtn:hover {
@@ -111,7 +113,7 @@ a:hover {
 .header-art {
     font-family: "Spectral", sans-serif;
     padding: 10px 10px 0;
-    color: #fff;
+    color: #f3f4f9;
 }
 
 .about-bg {
@@ -125,7 +127,7 @@ a:hover {
 .about-bg p {
     text-align: justify;
     letter-spacing: 1px;
-    color: #fff;
+    color: #f3f4f9;
     margin-bottom: 0;
 }
 
@@ -222,6 +224,7 @@ a:hover {
 
 .pic img {
     width: 100%;
+    height: auto;
     border-radius: 20px;
     box-shadow: 3px 4px 4px #425c81;
   }
