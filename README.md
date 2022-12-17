@@ -182,11 +182,14 @@ Wireframes were created at the beginning of the design process using [Balsamiq](
     * [Cloud Convert](https://cloudconvert.com/) - used to convert images into webp.
     * [Favicon](https://favicon.io/) - used for a browser tab icon.
     * [Balsamiq](https://balsamiq.com/wireframes/desktop/) - used to create wireframes.
+    * [Mockup Generator](https://techsini.com/multi-mockup/) - used for create mockup image.
   
 # Testing
 ## Validator Testing
 ### HTML
-* All four pages were tested using the [W3C Validator](https://validator.w3.org/).  No errors were found.
+* All four pages were tested using the [W3C Validator](https://validator.w3.org/).
+* On the gallery page one [warning](assets/images/readme-img/warning.PNG) was found.
+It was fixed by changing section element to div element.
   * [Home Page](assets/images/readme-img/homecheck.PNG)
   * [Gallery Page](assets/images/readme-img/gallerycheck.PNG)
   * [Contact Page](assets/images/readme-img/contactcheck.PNG)
@@ -222,24 +225,55 @@ Wireframes were created at the beginning of the design process using [Balsamiq](
 * Placed all scripts files into bottom of the body rather than in the head, so most important content was loaded first.
 
 ## User Testing
-|   Target      |   Outcome     |   Image     |
-| ------------- |:-------------:| -----------:|
+|   Target      |   Outcome     | Image |
+| ------------- |-------------| -----------|
 | 1. Header navigates to main page.  | The header is clickable and will redirect to the home page from any other page. | ![Header](assets/images/readme-img/header.PNG) |
 | 2. Easy and clear navigation throught all pages.|Navbar is conveniently located at the top of every page and the links are clearly visible. Each link navigates to the correct page. Users are already familiar with the hamburger menu, so they will know its functions. |![Nav](assets/images/readme-img/navham.PNG) |
 | 3. Easy contact. | Additionally added in the center of the hero image contact button, which will navigate to the contact page. |![Button](assets/images/readme-img/button.PNG) |
 | 4. Get in touch through social media.  |Font Awesome social media icons placed in the footer, each one opens in a new tab, and has a hover effect.|![Socialmedia](assets/images/readme-img/footericon.PNG) |
-| 5. Acknowledgement that the query has been received. | After submiting the query, user is directed to the 'Thank you' page, acknowledging their query has been received | ![Thankyou](assets/images/readme-img/thankyoutest.PNG) |
+| 5. Acknowledgement that the query has been received. | After submiting the query, user is directed to the 'Thank you' page, acknowledging their query has been received | ![Thankyou](assets/images/readme-img/thankyou.PNG) |
 | 6. Being able to visit site on every device. | The page has been designed responsively (including using a hamburger navbar) to ensure the site is accessible on any device. Content changes to displaying two items in one line in desktop, to displaying one per line on mobile. |![Desktop](assets/images/readme-img/lgscreen.PNG) ![Mobile](assets/images/readme-img/mobile.PNG) |
 
 
-## Responsiveness
+# Bugs
+| Bugs       | Solved?   | How? |
+|------------|-----------|------|
+| 1. Footer on contact page  | Yes | The page did not have enough content, so the footer was displayed in the middle of the page. I found solution on the [CSS Tricks Page](https://css-tricks.com/couple-takes-sticky-footer/). |
+| 2. Carousel images on the desktops were too stretched and didn't look good. | Yes    |   I've asked for help on the [stack overflow](https://stackoverflow.com/) and was advised to add object-fit: contain property to my CSS, which centered images and make them look better. |
+| 3. Images not displaying on my home page | Yes | I've changed absolute file path to the relative path. |
+| 4. On the landscape view, the text on the quote overflows the image. [See here](assets/images/readme-img/bug.PNG) | Yes | I've added position: relative to the parent, and absolute to the child.
 
+# Deployment
+### The following steps were taken to deploy the website on GitHub Pages:
 
-### bugs
-change sexction to div in gallery to pass the check
-### Unfixed Bugs
+1. The Code Insitute template was obtained from https://github.com/Code-Institute-Org/gitpod-full-template
+2. A new repository was created in GitHub, the project was named.
+3. The green Gitpod button was pressed to open a new workspace/development environment (obtain the gitpod extension to enable the green button).
+4. Git is used to commit during development and push this over to Github
+5. To create the hosted site at Github Pages, I navigated to the Github repo settings tab and found the Github pages dedicated section.
+6. The main branch was chosen in the dropdown menu and the 'save' button was pressed. This supplied a live link to the [website](https://monimaj89.github.io/Project1/).
 
+### To run locally
+1. Go to the Github repo at https://github.com/monimaj89/Project1.
+2. Click on the 'code' button and copy HTTPS link.
+3. Open your own terminal in your editor and change the current working directory to the location of where you want the cloned directory to be.
+4. In the terminal type git clone, and then paste the URL you copied.
+5. Press enter to complete.
 
+### You can fork the repository by following these steps:
+
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+
+# Credits
+1. Code Institute - It was a pure pleasure to learn HTML, CSS, use of the Bootstrap, and Gitpod with Code Institute. Participating in the course allows me to develop my programming skills. The idea of the hamburger menu was borrowe from Bootstrap mini project: Whiskey Drop.
+2. Gareth McGirr - my menthor, who were always helpful.
+3. My sister, Natalia Michalska, who gave me idea for this page, provided gallery images and "About me" text.
+4. Slack community
+5. Images on the home page were downloaded from [Pexel](https://www.pexels.com/)
+* [Hero image by Cottonbro studio ](https://www.pexels.com/photo/assorted-color-paint-brush-set-3777876/)
+* [Quote background by Suzy Hazelwood](https://www.pexels.com/photo/blue-and-red-galaxy-artwork-1629236/)
+* [Quote 2 background by Cup of Couple](https://www.pexels.com/photo/art-materials-over-a-wooden-chair-7301927/)
 
 
 
