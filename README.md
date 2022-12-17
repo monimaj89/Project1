@@ -157,7 +157,7 @@ Wireframes were created at the beginning of the design process using [Balsamiq](
   ![Galleryp](assets/images/readme-img/galleryp.webp)
 
 ## Contact Page
-* Contact form is enables to get in touch with the artist. The form includes:
+* Contact form enables to get in touch with the artist. The form includes:
   * Name (type=text, required)
   * Email (type=email, required)
   * Project description (type=textarea, required)
@@ -209,10 +209,29 @@ Wireframes were created at the beginning of the design process using [Balsamiq](
   * [Gallery Page](assets/images/readme-img/gallerywave.PNG)
   * [Contact Page](assets/images/readme-img/contactwave.PNG)
   * [Thank you Page](assets/images/readme-img/thankyouwave.PNG)
-  
-## Lighthouse Testing
 
-## Comptibility
+## Lighthouse Testing
+### Lighthouse testing was performed using [Google Chrome Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) extension.
+* [Home Page](assets/images/readme-img/homeperf.PNG)
+* [Gallery Page](assets/images/readme-img/galleryperf.PNG)
+* [Contact Page](assets/images/readme-img/contactperf.PNG)
+* [Thank you Page](assets/images/readme-img/thankyouperf.PNG),
+### Improvements to the Lighthouse score:
+
+* Converted all images into webp format and compressed sizes to speed up loading times.
+* Placed all scripts files into bottom of the body rather than in the head, so most important content was loaded first.
+
+## User Testing
+|   Target      |   Outcome     |   Image     |
+| ------------- |:-------------:| -----------:|
+| 1. Header navigates to main page.  | The header is clickable and will redirect to the home page from any other page. | ![Header](assets/images/readme-img/header.PNG) |
+| 2. Easy and clear navigation throught all pages.|Navbar is conveniently located at the top of every page and the links are clearly visible. Each link navigates to the correct page. Users are already familiar with the hamburger menu, so they will know its functions. |![Nav](assets/images/readme-img/navham.PNG) |
+| 3. Easy contact. | Additionally added in the center of the hero image contact button, which will navigate to the contact page. |![Button](assets/images/readme-img/button.PNG) |
+| 4. Get in touch through social media.  |Font Awesome social media icons placed in the footer, each one opens in a new tab, and has a hover effect.|![Socialmedia](assets/images/readme-img/footericon.PNG) |
+| 5. Acknowledgement that the query has been received. | After submiting the query, user is directed to the 'Thank you' page, acknowledging their query has been received | ![Thankyou](assets/images/readme-img/thankyoutest.PNG) |
+| 6. Being able to visit site on every device. | The page has been designed responsively (including using a hamburger navbar) to ensure the site is accessible on any device. Content changes to displaying two items in one line in desktop, to displaying one per line on mobile. |![Desktop](assets/images/readme-img/lgscreen.PNG) ![Mobile](assets/images/readme-img/mobile.PNG) |
+
+
 ## Responsiveness
 
 

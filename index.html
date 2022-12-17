@@ -9,8 +9,10 @@
     <meta name="description" content="Painter portfolio with gallery">
     <meta name="keywords" content="Painting, Cat, Gustav Klimt, Art novueau">
     <title>Art by Nat</title>
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- favicon icon -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -20,125 +22,134 @@
 </head>
 
 <body>
-    <!-- Header - Nav -->
-    <header class="container-fluid">
-        <div class="row">
-            <div class="col-12">
-                <a href="index.html">
-                    <h1 class="heading ft-fold"><i class="fa-solid fa-palette"></i> Art by Nat</h1>
-                </a>
-                <div class="navbar-bg uppercase">
-                    <nav class="navbar navbar-expand-sm sticky-top navbar-light">
-                        <button class="navbar-toggler ml-auto collapsed" type="button" data-toggle="collapse"
-                            data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span></button>
-                        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
-                            <ul class="navbar-nav">
-                                <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
-                                <li class="nav-item mr-2"><a class="nav-link" href="gallery.html">Gallery</a></li>
-                                <li class="nav-item mr-2"><a class="nav-link" href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
-                    </nav>
+    <!-- div=content keeps footer on the bottom of the page -->
+    <div class="content">
+        <!-- Header - Nav -->
+        <header class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <a href="index.html">
+                        <h1 class="heading ft-fold"><i class="fa-solid fa-palette"></i> Art by Nat</h1>
+                    </a>
+                    <div class="navbar-bg uppercase">
+                        <nav class="navbar navbar-expand-sm sticky-top navbar-light">
+                            <button class="navbar-toggler ml-auto collapsed" type="button" data-toggle="collapse"
+                                data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="active nav-item mr-2"><a class="nav-link" href="/">Home</a></li>
+                                    <li class="nav-item mr-2"><a class="nav-link" href="gallery.html">Gallery</a></li>
+                                    <li class="nav-item mr-2"><a class="nav-link" href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
-    <!-- /Header - Nav -->
+        </header>
+        <!-- /Header - Nav -->
 
-    <!-- Hero Image -->
-    <main>
-        <section class="container-fluid">
-            <div class="img-container">
-                <div class="img-overlay"></div>
-                <div class="row no-gutters">
-                    <div class="col-12">
-                        <h2 class="hero-img">Art by Nat</h2>
-                    </div>
-                    <div class="col-12 btn-img">
-                        <a class="mybtn" href="contact.html">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- Hero Image -->
-
-
-        <!-- About -  secQuote -->
-        <div class="row row-main container-fluid">
-            <div class="col-12 col-md-6 col-lg-5 about-bg border-lg">
-                <h2 class="header-art">About me</h2>
-                <hr>
-                <p>Welcome to my website. My name is Natalia and I am 36 years old.
-                    In 2013, I graduated from MA studies (literary culture) at the University of Lodz and, although I
-                    love books, cats and painting will always come first and second.
-                    I have been painting since I was a child, but my adventure with cats began a few years ago, after I
-                    took Kikko, my first cat, under my roof. It was love at first sight. This is how my passion and cat madness
-                    began. Blind Io, my other cat, came home less than a year later, and by then I was completely out of
-                    my mind. I love painting cats. Their elegance, calmness and individualism are an inexhaustible
-                    source of inspiration for me. In my paintings, I like to combine the art nouveau style with a bit of
-                    self-developed aesthetics. I am inspired by the works of Gustav Klimt, Japanese watercolors and...
-                    cats themselves of course!
-                    Please, make yourself comfortable, view my work and contact me if you need one of my paintings in your life.</p>
-            </div>
-            <div class="col-12 col-md-6 col-lg-5 secquote-bg border-lg">
-            </div>
-            <!--  /About - Quote -->
-
-            <!-- Quote - Image -->
-            <div class="col-12 col-md-6 col-lg-5 quote-bg border-lg">
-                <div class="quote">
-                    <q>It is better to fail in originality
-                        than to success in imitation.</q>
-                    <h2> - Herman Melville </h2>
-                </div>
-            </div>
-            <!-- /Quote - Image -->
-
-            <!-- Slideshow -->
-            <div class="col-12 col-md-6 col-lg-5 slide border-lg">
-                <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
-                    <ol class="carousel-indicators">
-                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-                    </ol>
-                    <div class="carousel-inner carousel">
-                        <div class="carousel-item active">
-                            <img src="assets/images/gallery/cat1.webp" class="d-block w-100"
-                                alt="a ginger cat sitting on the stairs">
+        <main>
+            <section class="container-fluid">
+                <div class="img-container">
+                    <div class="img-overlay"></div>
+                    <div class="row no-gutters">
+                        <div class="col-12">
+                            <h2 class="hero-img">Art by Nat</h2>
                         </div>
-                        <div class="carousel-item">
-                            <img src="assets/images/gallery/cat2.webp" class="d-block w-100"
-                                alt="a black-white kitten on young buddha's hands">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/images/gallery/cat11.webp" class="d-block w-100"
-                                alt="a black cat laying on the colorful fabrics">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="assets/images/gallery/cat4.webp" class="d-block w-100"
-                                alt="a white cat with blue eyes covered in colorful fabric">
+                        <div class="col-12 btn-img">
+                            <a class="mybtn" href="contact.html">Contact</a>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
                 </div>
+            </section>
+            <!-- Hero Image -->
+
+
+            <!-- About -  secQuote -->
+            <div class="row row-main container-fluid">
+                <div class="col-12 col-sm-6 col-md-5 about-bg border-lg">
+                    <h2 class="header-art">About me</h2>
+                    <hr>
+                    <p>Welcome to my website. My name is Natalia and I am 36 years old.
+                        In 2013, I graduated from MA studies (literary culture) at the University of Lodz and, although
+                        I
+                        love books, cats and painting will always come first and second.
+                        I have been painting since I was a child, but my adventure with cats began a few years ago,
+                        after I
+                        took Kikko, my first cat, under my roof. It was love at first sight. This is how my passion and
+                        cat madness
+                        began. Blind Io, my other cat, came home less than a year later, and by then I was completely
+                        out of
+                        my mind. I love painting cats. Their elegance, calmness and individualism are an inexhaustible
+                        source of inspiration for me. In my paintings, I like to combine the art nouveau style with a
+                        bit of
+                        self-developed aesthetics. I am inspired by the works of Gustav Klimt, Japanese watercolors
+                        and...
+                        cats themselves of course!
+                        Please, make yourself comfortable, view my work and contact me if you need one of my paintings
+                        in your life.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-5 secquote-bg border-lg">
+                </div>
+                <!--  /About - Quote -->
+
+                <!-- Quote - Image -->
+                <div class="col-12 col-sm-6 col-md-5 quote-bg border-lg">
+                    <div class="quote">
+                        <q>It is better to fail in originality
+                            than to success in imitation.</q>
+                        <h2> - Herman Melville </h2>
+                    </div>
+                </div>
+                <!-- /Quote - Image -->
+
+                <!-- Slideshow -->
+                <div class="col-12 col-sm-6 col-md-5 slide border-lg">
+                    <div id="carouselExampleIndicators" class="carousel" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner carousel">
+                            <div class="carousel-item active">
+                                <img src="assets/images/gallery/cat1.webp" class="d-block w-100"
+                                    alt="a ginger cat sitting on the stairs">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/gallery/cat2.webp" class="d-block w-100"
+                                    alt="a black-white kitten on young buddha's hands">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/gallery/cat11.webp" class="d-block w-100"
+                                    alt="a black cat laying on the colorful fabrics">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="assets/images/gallery/cat4.webp" class="d-block w-100"
+                                    alt="a white cat with blue eyes covered in colorful fabric">
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                            data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                            data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <!-- /Slideshow -->
             </div>
-            <!-- /Slideshow -->
-        </div>
-
-    </main>
-
-
+        </main>
+    </div>
     <!-- Footer -->
     <footer class="container-fluid footer">
         <div class="row no-gutters">
@@ -167,7 +178,9 @@
         </div>
     </footer>
     <!-- /Footer -->
+    <!-- Font Awesome icon -->
     <script src="https://kit.fontawesome.com/baba64def8.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS (for hamburger menu) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
     </script>
