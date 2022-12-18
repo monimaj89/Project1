@@ -56,11 +56,12 @@ a:hover {
 
 .img-container {
     background: url("../images/paint.webp") no-repeat center center;
-    height: 50vh;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    height: 50vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;

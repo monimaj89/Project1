@@ -11,6 +11,44 @@ The website is fully responsive and was designed using HTML, CSS and User Centri
 ![Website mock-up](assets/images/readme-img/mockup.webp)
 
 ***
+# Contents
+
+* [User Experience (UX)](#user-experience-ux)
+    * [Project Goals](#project-goals)
+        * [User Goals](#user-goals)
+        * [Site Owner Goals](#site-owner-goals)
+        * [User Expectactions](#user-expectactions)
+    * [User Stories](#user-stories) 
+        * [As i first time user](#as-a-first-time-user)
+        * [As a returning user](#as-a-returning-user)
+        * [As a site owner](#as-a-site-owner)
+* [Design](#design)
+    * [Colour](#colour)
+    * [Typography](#typography)
+    * [Icons and Images](#icons-and-images)
+    * [Wireframes](#wireframes)
+* [Features](#features)
+    * [Favivon](#favicon)
+    * [Header](#header)
+    * [Navigation bar](#navigation-bar)
+    * [Hero Image](#hero-image)
+    * [About me & quote section](#about-me--quote-section)
+    * [A carousel & quote section](#a-carousel--quote-section)
+    * [Footer](#footer)
+    * [Gallery Page](#gallery-page)
+    * [Contact Page](#contact-page)
+* [Technologies](#technologies-used)
+* [Testing](#testing)
+    * [Validator Testing](#validator-testing)
+        * [HTML](#html)
+        * [CSS](#css)
+    * [Wave Testing](#wave-testing)
+    * [Lighthouse Testing](#lighthouse-testing)
+    * [User Testing](#user-testing)
+* [Bugs](#bugs)
+* [Deployment](#deployment)
+* [Credits](#credits)
+
 # User Experience (UX)
 ## Project Goals
 ### User Goals:
@@ -182,7 +220,7 @@ Wireframes were created at the beginning of the design process using [Balsamiq](
     * [Cloud Convert](https://cloudconvert.com/) - used to convert images into webp.
     * [Favicon](https://favicon.io/) - used for a browser tab icon.
     * [Balsamiq](https://balsamiq.com/wireframes/desktop/) - used to create wireframes.
-    * [Mockup Generator](https://techsini.com/multi-mockup/) - used for create mockup image.
+    * [Mockup Generator](https://techsini.com/multi-mockup/) - used to create mockup image.
   
 # Testing
 ## Validator Testing
@@ -195,7 +233,7 @@ It was fixed by changing section element to div element.
   * [Contact Page](assets/images/readme-img/contactcheck.PNG)
   * [Thank you Page](assets/images/readme-img/thankyoucheck.PNG)
 ### CSS
-* [CSS Validator](https://jigsaw.w3.org/css-validator/) were used to test the CSS, also shows no errors.
+  * [CSS Validator](https://jigsaw.w3.org/css-validator/) were used to test the CSS, and shows no errors.
   * [CSS Check](assets/images/readme-img/csscheck.PNG)
 
 ## Wave Testing
@@ -215,10 +253,17 @@ It was fixed by changing section element to div element.
 
 ## Lighthouse Testing
 ### Lighthouse testing was performed using [Google Chrome Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk) extension.
-* [Home Page](assets/images/readme-img/homeperf.PNG)
-* [Gallery Page](assets/images/readme-img/galleryperf.PNG)
-* [Contact Page](assets/images/readme-img/contactperf.PNG)
-* [Thank you Page](assets/images/readme-img/thankyouperf.PNG),
+* Desktop
+  * [Home Page](assets/images/readme-img/hemodes.PNG)
+  * [Gallery Page](assets/images/readme-img/gallerydes.PNG)
+  * [Contact Page](assets/images/readme-img/contactdes.PNG)
+  * [Thank you Page](assets/images/readme-img/thankyoudes.PNG)
+* Mobile
+  * [Home Page](assets/images/readme-img/homeperf.PNG)
+  * [Gallery Page](assets/images/readme-img/galleryperf.PNG)
+  * [Contact Page](assets/images/readme-img/contactperf.PNG)
+  * [Thank you Page](assets/images/readme-img/thankyouperf.PNG)
+
 ### Improvements to the Lighthouse score:
 
 * Converted all images into webp format and compressed sizes to speed up loading times.
@@ -238,7 +283,7 @@ It was fixed by changing section element to div element.
 # Bugs
 | Bugs       | Solved?   | How? |
 |------------|-----------|------|
-| 1. Footer on contact page  | Yes | The page did not have enough content, so the footer was displayed in the middle of the page. I found solution on the [CSS Tricks Page](https://css-tricks.com/couple-takes-sticky-footer/). |
+| 1. Footer on the contact page  | Yes | The page did not have enough content, so the footer was displayed in the middle of the page. I found solution on the [CSS Tricks Page](https://css-tricks.com/couple-takes-sticky-footer/). |
 | 2. Carousel images on the desktops were too stretched and didn't look good. | Yes    |   I've asked for help on the [stack overflow](https://stackoverflow.com/) and was advised to add object-fit: contain property to my CSS, which centered images and make them look better. |
 | 3. Images not displaying on my home page | Yes | I've changed absolute file path to the relative path. |
 | 4. On the landscape view, the text on the quote overflows the image. [See here](assets/images/readme-img/bug.PNG) | Yes | I've added position: relative to the parent, and absolute to the child.
@@ -269,7 +314,7 @@ It was fixed by changing section element to div element.
 1. Code Institute - It was a pure pleasure to learn HTML, CSS, use of the Bootstrap, and Gitpod with Code Institute. Participating in the course allows me to develop my programming skills. The idea of the hamburger menu was borrowe from Bootstrap mini project: Whiskey Drop.
 2. Gareth McGirr - my menthor, who were always helpful.
 3. My sister, Natalia Michalska, who gave me idea for this page, provided gallery images and "About me" text.
-4. Slack community
+4. Slack community - Their help was invaluable.
 5. Images on the home page were downloaded from [Pexel](https://www.pexels.com/)
 * [Hero image by Cottonbro studio ](https://www.pexels.com/photo/assorted-color-paint-brush-set-3777876/)
 * [Quote background by Suzy Hazelwood](https://www.pexels.com/photo/blue-and-red-galaxy-artwork-1629236/)
