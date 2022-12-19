@@ -264,6 +264,8 @@ It was fixed by changing section element to div element.
   * [Contact Page](assets/images/readme-img/contactperf.PNG)
   * [Thank you Page](assets/images/readme-img/thankyouperf.PNG)
 
+  The performance on the home page on a mobile device is not quite what I wish it was. I tried to compress the hero image, which then unfortunately loses quality. Considering that my site is an artistic site, I came to the conclusion that the quality of the presented images is more important than the page loading speed, which by the way is not the worst.
+
 ### Improvements to the Lighthouse score:
 
 * Converted all images into webp format and compressed sizes to speed up loading times.
