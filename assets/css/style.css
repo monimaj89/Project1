@@ -208,6 +208,7 @@ a:hover {
 }
 .carousel-item img {
     height: 50vh;
+    object-fit: contain;
 }
 
 
@@ -306,7 +307,6 @@ button[type="submit"] {
 
 @media(min-width: 768px) {
     .secquote p {display: table-caption; font-size: 3.5rem;}
-    .carousel-item img {object-fit: contain; border-radius: 50px;}
     .row-main {display: flex; justify-content: space-evenly;}
     .border-lg {border-radius: 50px; margin: 10px 0;}
     .center-form {max-width: 50%;}
