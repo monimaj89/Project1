@@ -175,6 +175,8 @@ Wireframes were created at the beginning of the design process using [Balsamiq](
 
   ![About](assets/images/readme-img/about.PNG)
 
+* A scrollbar - In the 'About me' section, there is a [scrollbar](assets/images/readme-img/scrollbar.png) on smaller screens. The scrollbar has been tested on Chrome, Mozilla and Safari browsers and looks aesthetically pleasing on each of these browsers. However, it has come to my attention that someone may see the scrollbar like [this](assets/images/readme-img/scrollbar1.PNG). Unfortunately, I haven't been able to find out what's causing it.
+
 ## A carousel & quote section
 * Includes a Herman Melville's art quote with a background image.
 * A carousel gallery with 4 images which change automatically.  
@@ -285,7 +287,7 @@ It was fixed by changing section element to div element.
 # Bugs
 | Bugs       | Solved?   | How? |
 |------------|-----------|------|
-| 1. Footer on the contact page  | Yes | The page did not have enough content, so the footer was displayed in the middle of the page. I found solution on the [CSS Tricks Page](https://css-tricks.com/couple-takes-sticky-footer/). |
+| 1. Footer on the contact page  | Yes | The page did not have enough content, so the footer was displayed in the middle of the page. I found solution on the [CSS Tricks Page](https://css-tricks.com/couple-takes-sticky-footer/) ('There is grid' section) |
 | 2. Carousel images on the desktops were too stretched and didn't look good. | Yes    |   I've asked for help on the [stack overflow](https://stackoverflow.com/) and was advised to add object-fit: contain property to my CSS, which centered images and make them look better. |
 | 3. Images not displaying on my home page | Yes | I've changed absolute file path to the relative path. |
 | 4. On the landscape view, the text on the quote overflows the image. [See here](assets/images/readme-img/bug.PNG) | Yes | I've added position: relative to the parent, and absolute to the child.
