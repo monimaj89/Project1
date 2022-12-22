@@ -29,6 +29,7 @@ body {
     font-family: "Great Vibes", sans-serif;
     text-align: center;
     border: 1px solid;
+    border-color: #425c81;
     padding: 20px;
     margin: 0;
     font-size: 3.1rem;
@@ -46,7 +47,8 @@ a:hover {
 
 .navbar-bg {
     font-family: "lato", sans-serif;
-    border: 1px groove;
+    border: 1px solid;
+    border-color: #425c81;
     background-color: #a5d4de;
     color: #425c81;
 }
@@ -217,7 +219,8 @@ a:hover {
 
 .footer {
     background-image: linear-gradient(#a5d4de, #ffff);
-    border: 1px groove; 
+    border: 1px solid; 
+    border-color: #425c81;
     grid-row-start: 2;
     grid-row-end: 3;
 }
