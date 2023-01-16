@@ -135,6 +135,16 @@ a:hover {
     margin-bottom: 0;
 }
 
+/* .scroller {
+    width: auto;
+    height: 50vh;
+    overflow-y: scroll;
+  } */
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+
 
 /* -------------------------------------------------------- Earth Quote */
 
@@ -311,7 +321,7 @@ button[type="submit"] {
 @media(min-width: 768px) {
     .secquote p {display: table-caption; font-size: 3.5rem;}
     .row-main {display: flex; justify-content: space-evenly;}
-    .border-lg {border-radius: 50px; margin: 10px 0;}
+    .border-lg {border-radius: 50px 10px 50px 10px; margin: 10px 0;}
     .center-form {max-width: 50%;}
 }
 
